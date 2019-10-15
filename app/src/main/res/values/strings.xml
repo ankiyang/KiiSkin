@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">KiiSkin</string>
+    <string name="keep_track_of_your_moles">Keep Track of Your moles</string>
+    <string name="start">Start</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="welcome_to_kiiskin">Welcome to KiiSkin</string>
 </resources>
