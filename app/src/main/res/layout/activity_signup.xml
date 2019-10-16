@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="@string/join_kiiskin"
+        android:textAlignment="center"
+        android:textColor="#676370"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="@string/sign_up"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:background="@drawable/input_email_bg"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="60dp"
+        android:layout_marginTop="100dp"
+        android:maxLines="1"
+        android:ems="20"
+        />
+
+
+    <EditText
+
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:background="@drawable/username_input_bg"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="60dp"
+        android:layout_marginTop="18dp"
+        android:maxLines="1"
+        android:ems="20"
+        />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:background="@drawable/input_password_bg"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="60dp"
+        android:layout_marginTop="18dp"
+        android:maxLines="1"
+        android:ems="20"
+        />
+
+
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Create"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/s8_btn_bg"
+        android:textColor="#673AB7"
+        />
+
+    <TextView
+        android:id="@+id/backtosignin"
+        android:layout_width="224dp"
+        android:layout_height="30dp"
+        android:layout_margin="100dp"
+        android:text="New to KiiSkin? Create an account."
+        android:textAlignment="center"
+        android:textColor="#070404"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
