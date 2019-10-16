@@ -11,7 +11,7 @@
         android:layout_margin="50dp"
         android:text="@string/join_kiiskin"
         android:textAlignment="center"
-        android:textColor="#676370"
+        android:textColor="#A29AAF"
         android:textSize="15sp"
         android:textStyle="bold" />
 
@@ -31,30 +31,32 @@
         android:layout_height="50dp"
         android:layout_marginLeft="@dimen/small_margin"
         android:layout_marginRight="@dimen/small_margin"
-        android:background="@drawable/input_email_bg"
-        android:hint="Email Address"
+        android:hint="@string/email_address"
         android:inputType="textEmailAddress"
         android:paddingLeft="60dp"
+        android:paddingRight="60dp"
         android:layout_marginTop="100dp"
         android:maxLines="1"
         android:ems="20"
+        android:importantForAutofill="no"
         />
 
 
     <EditText
-
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="@dimen/small_margin"
         android:layout_marginRight="@dimen/small_margin"
         android:background="@drawable/username_input_bg"
-        android:hint="Username"
+        android:hint="@string/username"
         android:inputType="textPersonName"
         android:paddingLeft="60dp"
+        android:paddingRight="60dp"
         android:layout_marginTop="18dp"
         android:maxLines="1"
         android:ems="20"
+        android:importantForAutofill="no"
         />
 
 
@@ -65,12 +67,14 @@
         android:layout_marginLeft="@dimen/small_margin"
         android:layout_marginRight="@dimen/small_margin"
         android:background="@drawable/input_password_bg"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:paddingLeft="60dp"
+        android:paddingRight="60dp"
         android:layout_marginTop="18dp"
         android:maxLines="1"
         android:ems="20"
+        android:importantForAutofill="no"
         />
 
 
@@ -78,7 +82,7 @@
         android:id="@+id/sign_up_btn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Create"
+        android:text="@string/create"
         android:layout_marginLeft="@dimen/small_margin"
         android:layout_marginRight="@dimen/small_margin"
         android:layout_marginTop="30dp"
