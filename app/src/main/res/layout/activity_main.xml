@@ -8,8 +8,8 @@
     android:padding="10dp">
 
     <TextView
-        android:layout_width="272dp"
-        android:layout_height="77dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Welcome To Kiiskin"
         android:textColor="#673AB7"
         android:textSize="30sp"
@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/start"
+        android:onClick="startActivity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -34,8 +35,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="225dp"
-        android:layout_height="47dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/keep_track_of_your_moles"
         android:textColor="#673AB7"
         android:textSize="18sp"

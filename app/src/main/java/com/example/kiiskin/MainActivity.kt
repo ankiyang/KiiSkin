@@ -3,7 +3,6 @@ package com.example.kiiskin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -17,8 +16,8 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this, SignIn::class.java)
+            intent.putExtra("user_message", message)
             startActivity(intent)
-
         }
 //        startButton.setOnClickListener {
 //            // Code
