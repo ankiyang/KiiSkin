@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="1dp"
-        android:text="@string/sign_up"
+        android:text="@string/create_account"
         android:textAlignment="center"
         android:textColor="#673AB7"
         android:textSize="30sp"
@@ -29,8 +29,6 @@
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginLeft="@dimen/small_margin"
-        android:layout_marginRight="@dimen/small_margin"
         android:hint="@string/email_address"
         android:inputType="textEmailAddress"
         android:paddingLeft="60dp"
@@ -46,9 +44,6 @@
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginLeft="@dimen/small_margin"
-        android:layout_marginRight="@dimen/small_margin"
-        android:background="@drawable/username_input_bg"
         android:hint="@string/username"
         android:inputType="textPersonName"
         android:paddingLeft="60dp"
@@ -64,9 +59,6 @@
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginLeft="@dimen/small_margin"
-        android:layout_marginRight="@dimen/small_margin"
-        android:background="@drawable/input_password_bg"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:paddingLeft="60dp"
@@ -77,29 +69,13 @@
         android:importantForAutofill="no"
         />
 
-
     <Button
-        android:id="@+id/sign_up_btn"
+        android:id="@+id/AccountSave"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="@string/create"
-        android:layout_marginLeft="@dimen/small_margin"
-        android:layout_marginRight="@dimen/small_margin"
+        android:text="@string/save"
         android:layout_marginTop="30dp"
-        android:background="@drawable/s8_btn_bg"
         android:textColor="#673AB7"
         />
-
-    <TextView
-        android:id="@+id/backtosignin"
-        android:layout_width="224dp"
-        android:layout_height="30dp"
-        android:layout_margin="100dp"
-        android:text="New to KiiSkin? Create an account."
-        android:textAlignment="center"
-        android:textColor="#070404"
-        android:textSize="10sp"
-        android:textStyle="bold" />
-
 
 </LinearLayout>
