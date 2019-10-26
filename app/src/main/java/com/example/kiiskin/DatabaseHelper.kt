@@ -4,13 +4,12 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import android.os.Parcel
-import android.os.Parcelable
+
 
 class DatabaseHelper(context: Context): SQLiteOpenHelper(context, dbname, factory, version){
     override fun onCreate(p: SQLiteDatabase?) {
-        p?.execSQL("create table user(id integer primary key autoincrement, " +
-                "name varchar(30), email varchar(100), password varchar(20)")
+//        p?.execSQL("Drop table if exists user")
+        p?.execSQL("create table user(id integer primary key autoincrement, name varchar(30), email varchar(100), password varchar(20))")
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
@@ -22,7 +21,7 @@ class DatabaseHelper(context: Context): SQLiteOpenHelper(context, dbname, factor
         val values: ContentValues = ContentValues()
         values.put("name", name)
         values.put("email", email)
-        values.put("passoword", password)
+        values.put("password", password)
 
         db.insert("user", null, values)
         db.close()
@@ -30,7 +29,7 @@ class DatabaseHelper(context: Context): SQLiteOpenHelper(context, dbname, factor
 
     fun userPresent(email: String, password: String): Boolean {
         var db = writableDatabase
-        val query = "select * from user where email = $email and password = $password"
+        val query = "select * from user where email = '$email' and password = '$password'"
         val cursor = db.rawQuery(query, null)
         if (cursor.count <= 0){
             cursor.close()

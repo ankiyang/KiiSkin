@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             showRegistration()
         }
         MainSignInButton.setOnClickListener {
+            System.out.println("Main Sign In onclick")
             showLogIn()
         }
 
@@ -33,7 +34,15 @@ class MainActivity : AppCompatActivity() {
                 email.text.toString(),
                 password.text.toString()
             )
-            showHome()
+//            showHome()
+            System.out.println("account save  onclick")
+            Toast.makeText(this, "Account Created!", Toast.LENGTH_SHORT).show()
+            val intent = Intent()
+            //获取intent对象
+            intent.setClass(this, StartActivity::class.java)
+            intent.putExtra("user_name", username.text.toString());
+            // 获取class是使用::反射
+            startActivity(intent)
         }
 
         login_btn.setOnClickListener {
@@ -41,6 +50,11 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Login Success", Toast.LENGTH_SHORT).show()
             else
                 Toast.makeText(this, "Username or password is incorrect", Toast.LENGTH_SHORT).show()
+        }
+
+        gotosignup.setOnClickListener {
+            System.out.println("return to registration page")
+            showRegistration()
         }
     }
 
