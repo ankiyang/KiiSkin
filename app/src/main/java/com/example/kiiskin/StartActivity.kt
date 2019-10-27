@@ -14,10 +14,9 @@ class StartActivity :AppCompatActivity(){
 
         StartSkip.setOnClickListener {
             System.out.println("Skip Click run...")
-
-//            val intent = Intent()
-//            intent.setClass(this, RecycleActivity::class.java)
-//            startActivity(intent)
+            val intent = Intent()
+            intent.setClass(this, TabActivity::class.java)
+            startActivity(intent)
         }
     }
 
