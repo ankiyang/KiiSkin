@@ -6,6 +6,16 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="     "
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/txvUserMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

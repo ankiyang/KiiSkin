@@ -15,7 +15,7 @@
         <ImageButton
             android:id="@+id/UserInfo"
             android:layout_width="426dp"
-            android:layout_height="228dp"
+            android:layout_height="146dp"
             android:src="@drawable/support"
             tools:layout_editor_absoluteX="11dp"
             tools:layout_editor_absoluteY="225dp" />
@@ -29,8 +29,8 @@
             android:gravity="start"
             android:text="KiiSkin Support"
             android:textColor="#673AB7"
-            android:textSize="30sp"
-            android:textStyle="bold|italic" />
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/fragment_support"
@@ -50,8 +50,8 @@
             android:gravity="start"
             android:text="Tell Your Story"
             android:textColor="#673AB7"
-            android:textSize="30sp"
-            android:textStyle="bold|italic" />
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/letmeknow"

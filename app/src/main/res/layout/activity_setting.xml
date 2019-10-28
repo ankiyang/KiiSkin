@@ -17,6 +17,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#673AB7"/>
+
+    <TextView
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="monospace"
+        android:text="       "
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
@@ -32,10 +46,12 @@
 
         <TextView
             android:id="@+id/ContactSupportText"
-            android:layout_width="330dp"
+            android:layout_width="318dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Contact Support" />
+            android:text="Contact Support"
+            android:textAlignment="center"
+            android:textColor="#673AB7" />
 
     </LinearLayout>
 
@@ -55,7 +71,9 @@
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Download Photos" />
+            android:text="Download Photos"
+            android:textAlignment="center"
+            android:textColor="#673AB7"/>
 
     </LinearLayout>
 
@@ -75,7 +93,9 @@
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="About" />
+            android:text="About"
+            android:textAlignment="center"
+            android:textColor="#673AB7"/>
 
     </LinearLayout>
 
@@ -95,16 +115,20 @@
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Synchronization" />
+            android:text="Synchronization"
+            android:textAlignment="center"
+            android:textColor="#673AB7"/>
 
     </LinearLayout>
 
     <Button
         android:id="@+id/ButtonShareToOtherApps"
+        android:layout_gravity="center_horizontal"
         android:layout_width="326dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="@string/share_kiiskin_with_others"
-        android:textSize="18sp" />
+        android:textSize="15sp"
+        android:textColor="#673AB7"/>
 
 </LinearLayout>

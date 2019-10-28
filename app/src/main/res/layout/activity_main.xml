@@ -1,58 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="411dp"
+        android:layout_height="240dp"
+        android:text="    "
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="393dp"
+        android:layout_height="122dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Welcome To Kiiskin"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#673AB7"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="396dp"
+        android:layout_height="37dp"
+        android:fontFamily="monospace"
+        android:text="@string/keep_track_of_your_moles"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/startImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/launcher_icon"
+        android:layout_gravity="end"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/UserMessage"-->
+<!--        android:layout_width="344dp"-->
+<!--        android:layout_height="33dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:ems="10"-->
+<!--        android:hint="@string/enter_your_name" />-->
 
     <LinearLayout
-        android:id="@+id/home_11"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:layout_width="278dp"
-            android:layout_height="wrap_content"
-            android:text="Welcome To Kiiskin"
-            android:textColor="#673AB7"
-            android:textSize="30sp"
-            android:textStyle="bold"
-             />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="201dp"
-            android:layout_height="84dp"
-            android:text="@string/keep_track_of_your_moles"
-            android:textColor="#673AB7"
-            android:textSize="18sp" />
-
-        <EditText
-            android:id="@+id/UserMessage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:ems="10"
-            android:hint="@string/enter_your_name"
-             />
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
 
         <Button
             android:id="@+id/MainRegButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="registration"
-            />
+            android:textColor="#673AB7"/>
 
         <Button
             android:id="@+id/MainSignInButton"
-            android:layout_width="wrap_content"
+            android:layout_width="114dp"
             android:layout_height="wrap_content"
             android:text="Sign In"
-            />
+            android:textColor="#673AB7"/>
 
     </LinearLayout>
 
@@ -67,4 +88,4 @@
         layout="@layout/activity_signin"
         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

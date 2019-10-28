@@ -3,15 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentOne">
+    android:layout_margin="5dp"
+    android:background="#ffffff"
+    tools:context=".FragmentTwo">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/fragment_result"
+
+     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:text="hello_blank_fragment" />
+        android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <ImageView
+            android:id="@+id/ImageItem"
+            android:layout_width="96dp"
+            android:layout_height="99dp"
+            android:contentDescription="@string/appbar_scrolling_view_behavior"
+            android:src="@drawable/launcher_icon" />
+
+         <TextView
+             android:id="@+id/ResultItem"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center_vertical"
+             android:paddingLeft="10dp"
+             android:text="Recognition Result"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     </LinearLayout>
+
+
 
 </FrameLayout>
