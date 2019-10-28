@@ -1,80 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:padding="10dp"
-    android:orientation="vertical">
-
-
-    <TextView
-        android:layout_width="411dp"
-        android:layout_height="240dp"
-        android:text="    "
-        android:textAlignment="center"
-        android:textColor="#673AB7"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="393dp"
-        android:layout_height="122dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Welcome To Kiiskin"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#673AB7"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="396dp"
-        android:layout_height="37dp"
-        android:fontFamily="monospace"
-        android:text="@string/keep_track_of_your_moles"
-        android:textAlignment="center"
-        android:textColor="#673AB7"
-        android:textSize="18sp" />
-
-    <ImageView
-        android:id="@+id/startImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/launcher_icon"
-        android:layout_gravity="end"/>
-
-<!--    <EditText-->
-<!--        android:id="@+id/UserMessage"-->
-<!--        android:layout_width="344dp"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:ems="10"-->
-<!--        android:hint="@string/enter_your_name" />-->
+    android:padding="10dp">
 
     <LinearLayout
-        android:layout_width="234dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
+        android:id="@+id/home_11"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/MainRegButton"
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:layout_gravity="center_horizontal"
+            android:text="         "
+            android:textColor="#673AB7"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:text="Welcome To Kiiskin"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#673AB7"
+            android:textSize="30sp"
+            android:textStyle="bold"
+             />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_gravity="center_horizontal"
+            android:text="         "
+            android:textColor="#673AB7"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="registration"
-            android:textColor="#673AB7"/>
+            android:text="@string/keep_track_of_your_moles"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#673AB7"
+            android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/MainSignInButton"
-            android:layout_width="114dp"
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_gravity="center_horizontal"
+            android:text="         "
+            android:textColor="#673AB7"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/UserMessage"
+            android:layout_width="298dp"
             android:layout_height="wrap_content"
-            android:text="Sign In"
-            android:textColor="#673AB7"/>
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="@string/enter_your_name" />
 
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_gravity="center_horizontal"
+            android:text="         "
+            android:textColor="#673AB7"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/MainRegButton"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="registration" />
+
+            <Button
+                android:id="@+id/MainSignInButton"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Sign In" />
+        </LinearLayout>
     </LinearLayout>
 
     <include
@@ -88,4 +115,4 @@
         layout="@layout/activity_signin"
         />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
