@@ -108,7 +108,6 @@ class FragmentOne : Fragment() {
             val auxFile = File(mCurrentPhotoPath)
             var bitmap: Bitmap = BitmapFactory.decodeFile(mCurrentPhotoPath)
             image_view.setImageBitmap(bitmap)
-
         }
     }
     private fun checkPersmission(): Boolean {

@@ -15,7 +15,7 @@ class FragmentFour : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        fragment_userprofiles.text = "Fragment Four"
+//        fragment_userprofiles.text = "Fragment Four"
     }
 
 

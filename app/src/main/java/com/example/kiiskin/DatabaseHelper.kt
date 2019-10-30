@@ -13,7 +13,6 @@ class DatabaseHelper(context: Context): SQLiteOpenHelper(context, dbname, factor
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-
     }
 
     fun insertUserData(name: String, email: String, password:String){

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 
 import kotlinx.android.synthetic.main.fragment_result.*
 
+
 class FragmentTwo : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -16,7 +17,7 @@ class FragmentTwo : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        fragment_result.text = "Fragment Result"
+//        fragment_result.text = "Fragment Result"
     }
 
 
