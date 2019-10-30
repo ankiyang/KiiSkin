@@ -10,9 +10,11 @@
 
     <LinearLayout
         android:id="@+id/home_11"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="10dp">
 
         <TextView
             android:id="@+id/textView4"
@@ -25,14 +27,13 @@
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="278dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome To Kiiskin"
             android:layout_gravity="center_horizontal"
+            android:text="Welcome To Kiiskin"
             android:textColor="#673AB7"
             android:textSize="30sp"
-            android:textStyle="bold"
-             />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView6"
@@ -48,10 +49,10 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/keep_track_of_your_moles"
             android:layout_gravity="center_horizontal"
+            android:text="@string/keep_track_of_your_moles"
             android:textColor="#673AB7"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/textView8"
